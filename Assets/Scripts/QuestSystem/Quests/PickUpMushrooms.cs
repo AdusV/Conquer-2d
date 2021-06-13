@@ -12,7 +12,6 @@ public class PickUpMushrooms : Quest
     }
     private void Start()
     {
-        NotificationSystem.Instance.AddNotification("Otrzymałes misje"); 
     }
     public override void Finished()
     {

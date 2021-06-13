@@ -12,6 +12,6 @@ public class AddingCactusQuest : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        quests.AddComponent<CactusQuest1>();
+        quests.GetComponent<QuestStorage>().AddQuest(typeof(CactusQuest1));
     }
 }

@@ -9,12 +9,14 @@ public class Tent : MonoBehaviour
 
     private void Start()
     {
-        
         quests = GameObject.Find("Quest");
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        allien.AddComponent<AddingCactusQuest>();   
-        quests.AddComponent<PinkDiamondQuest>();
+        
+        allien.AddComponent<AddingCactusQuest>(); 
+        quests.GetComponent<QuestStorage>().AddQuest(typeof(PinkDiamondQuest));
+  
+        // quests.AddComponent<PinkDiamondQuest>();
     }
 }

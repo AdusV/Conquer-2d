@@ -22,7 +22,6 @@ public class GameSaves : MonoBehaviour
         PlayerPrefs.SetInt("points", PlayerStats.Instance.Points);
         PlayerPrefs.SetInt("xp", PlayerStats.Instance.LevelXp);
         PlayerPrefs.SetInt("grzybobranie",Convert.ToInt32(Achievements.Instance.grzyb.isCompleted));
-
     }
     public void LoadGameState()
     {

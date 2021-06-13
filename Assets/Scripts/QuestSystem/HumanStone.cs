@@ -15,7 +15,7 @@ public class HumanStone : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        quests.AddComponent<StoneQuest>();
+        quests.GetComponent<QuestStorage>().AddQuest(typeof(StoneQuest));
     }
 }
 

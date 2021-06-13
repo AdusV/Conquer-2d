@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CactusQuest1 : Quest
 {
+    [SerializeField] GameObject cactus;
+
     private void Awake()
     {
         questName = "Kaktus";
@@ -11,10 +13,21 @@ public class CactusQuest1 : Quest
         questObjective = new CollectionObjective(this, 1, "cactus");
     }
 
+    void Start()
+    {
+        cactus = GameObject.Find("cactus");
+        cactus.SetActive(false);
+    } 
+    
     public override void Finished()
     {
         PlayerStats.Instance.UpdateRegenerationRate(3);
         base.Finished();
     }
 
+    public override void SetActive()
+    {
+        base.SetActive();
+        cactus.SetActive(true);
+    }
 }
