@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2409030121803788230}
   - component: {fileID: 3513817310522695792}
   - component: {fileID: 5805498386499824879}
-  - component: {fileID: 3242739727172078393}
+  - component: {fileID: 605895355574634340}
+  - component: {fileID: 112285389}
   m_Layer: 0
   m_Name: mushroom
   m_TagString: Untagged
@@ -48,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -100,7 +102,20 @@ CircleCollider2D:
   m_Offset: {x: 0.004720956, y: 0.047209747}
   serializedVersion: 2
   m_Radius: 0.24034643
---- !u!114 &3242739727172078393
+--- !u!114 &605895355574634340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794981173176985236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6212ff494f615934fade0cfdfa672d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stackSize: 62
+--- !u!114 &112285389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -112,4 +127,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ecceb39e5c71364e867dfc9ffdfa9bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  points: 2
+  points: 1

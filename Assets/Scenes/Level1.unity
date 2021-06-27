@@ -267,6 +267,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2963692}
   m_CullTransparentMesh: 0
+--- !u!1 &112285388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3794981173176985236, guid: 5c17b4111cb946640bde7ddc4cfb13de,
+    type: 3}
+  m_PrefabInstance: {fileID: 3661719860642226598}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &112285389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112285388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecceb39e5c71364e867dfc9ffdfa9bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points: 1
 --- !u!1 &191225420
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,7 +871,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.2903228, y: 1}
+    m_SensorSize: {x: 2.4039364, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10833,6 +10852,7 @@ GameObject:
   - component: {fileID: 1597358296}
   - component: {fileID: 1597358298}
   - component: {fileID: 1597358299}
+  - component: {fileID: 1597358300}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -10988,6 +11008,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPoints: 1000
+--- !u!114 &1597358300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1597358292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a035a67ae973864c89d742d001785df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxCapacity: -1
 --- !u!1 &1601114892
 GameObject:
   m_ObjectHideFlags: 0
