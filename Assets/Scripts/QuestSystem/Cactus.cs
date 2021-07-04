@@ -11,4 +11,11 @@ public class Cactus : MonoBehaviour
         EventController.ItemPickedUp("cactus");
         Destroy(this.gameObject);
     }
+    
+    void OnDestroy() {
+        
+        PlayerStats.Instance.AddPoints(points);
+        PlayerStats.Instance.questStorage.GetComponent<CactusQuest1>().PickupEvent();
+        EventController.ItemPickedUp("mushroom");
+    }
 }

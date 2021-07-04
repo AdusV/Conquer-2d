@@ -29,7 +29,7 @@ public class KillBanditQuest : Quest
     {
         if (isActive)
         {
-            isFinished = true;
+            Finished();
         }
     }
 }

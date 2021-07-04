@@ -5,10 +5,11 @@ using UnityEngine;
 public class Mushroom : MonoBehaviour
 {
     [SerializeField] int points;
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
+
+    void OnDestroy() {
+        
         PlayerStats.Instance.AddPoints(points);
+        PlayerStats.Instance.questStorage.GetComponent<PickUpMushrooms>().PickupEvent();
         EventController.ItemPickedUp("mushroom");
-        Destroy(this.gameObject);
     }
 }

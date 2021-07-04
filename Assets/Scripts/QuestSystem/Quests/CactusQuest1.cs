@@ -30,4 +30,12 @@ public class CactusQuest1 : Quest
         base.SetActive();
         cactus.SetActive(true);
     }
+
+    public void PickupEvent()
+    {
+        if (isActive)
+        {
+            Finished();
+        }
+    }
 }

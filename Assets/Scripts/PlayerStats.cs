@@ -29,6 +29,9 @@ public class PlayerStats : MonoBehaviour
     [Header("Interfejs")]
     [SerializeField] Image healthBar;
     [SerializeField] TextMeshProUGUI pointsText;
+    public GameObject player;
+    public Storage storage;
+    public GameObject questStorage;
 
     public int Points
     {
@@ -55,6 +58,9 @@ public class PlayerStats : MonoBehaviour
     private void Start()
     {
         InvokeRepeating("UpdateHealthBarUI", 0, 0.1f);
+        player = GameObject.FindWithTag("Player");
+        questStorage = GameObject.FindWithTag("QuestStorage");
+        storage = player.GetComponent<Storage>();
     }
     public void Regeneration()
     {

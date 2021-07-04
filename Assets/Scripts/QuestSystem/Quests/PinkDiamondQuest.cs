@@ -28,4 +28,12 @@ public class PinkDiamondQuest  : Quest
         base.SetActive();
         diamond.SetActive(true);
     }
+
+    public void PickupEvent()
+    {
+        if (isActive)
+        {
+            Finished();
+        }
+    }
 }

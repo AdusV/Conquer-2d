@@ -20,7 +20,7 @@ public class Storage : MonoBehaviour
 
     public void AddItem(string itemId, int amount = 1)
     {
-        var slot = storageList.FirstOrDefault(x => x.ItemId == itemId && x.Amount < maxCapacity);
+        var slot = storageList.FirstOrDefault(x => x.ItemId == itemId && (x.Amount < maxCapacity || maxCapacity == -1) );
         if (slot == null)
         {
             slot = new StorageSlot(itemId, amount);
