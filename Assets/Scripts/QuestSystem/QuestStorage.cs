@@ -23,6 +23,7 @@ public class QuestStorage : MonoBehaviour
             gameObject.AddComponent(guest);
         }
         AddQuest(typeof(PickUpMushrooms));
+        AddQuest(typeof(KillBanditQuest));
         
     }
 

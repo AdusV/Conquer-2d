@@ -852,7 +852,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.4039364, y: 1}
+    m_SensorSize: {x: 2.2408624, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -10919,7 +10919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d694c78cf07ec084890ec7f0f9cb8b0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.01
+  speed: 0.05
 --- !u!50 &1597358296
 Rigidbody2D:
   serializedVersion: 4
@@ -75553,6 +75553,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4190027042515920144, guid: a2e81b192dce19e4ea75c2e51cb3831f,
+        type: 3}
+      propertyPath: Quests
+      value: 
+      objectReference: {fileID: 191225420}
     - target: {fileID: 5989521170264533034, guid: a2e81b192dce19e4ea75c2e51cb3831f,
         type: 3}
       propertyPath: m_Name

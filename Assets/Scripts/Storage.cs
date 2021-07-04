@@ -16,7 +16,6 @@ public class Storage : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(storageList.FirstOrDefault()?.Amount.ToString() ?? "0");
     }
 
     public void AddItem(string itemId, int amount = 1)
