@@ -11,6 +11,6 @@ public class Stored : MonoBehaviour
         // todo: problem z kolizją miecza
         Debug.Log(collision.name);
         var storage = collision.GetComponent<Storage>();
-        storage.AddItem(gameObject.name);
+        storage.AddItem(gameObject.tag);
     }
 }
